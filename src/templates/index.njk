@@ -1,0 +1,48 @@
+{% extends "_layout.njk" %}
+
+{% set title = "Home" %}
+{% set active = "home" %}
+
+{% block content %}
+  <header class="hero">
+    <div class="container text-center py-5">
+      <h1 class="display-2 fw-bold mb-3 animate-fade-in">Elevate Your Digital Presence</h1>
+      <p class="lead mb-4 animate-fade-in-delay">Sleek, responsive, and high-performance web experiences.</p>
+      <a href="/about.html" class="btn btn-primary btn-lg animate-fade-in-delay-2">Get Started</a>
+    </div>
+  </header>
+
+  <section class="features py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <div class="card-body text-center p-4">
+              <div class="icon fs-1 mb-3">🚀</div>
+              <h3 class="card-title h5 fw-bold mb-3">Fast Performance</h3>
+              <p class="card-text text-muted">Optimized code ensures your users never have to wait.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <div class="card-body text-center p-4">
+              <div class="icon fs-1 mb-3">📱</div>
+              <h3 class="card-title h5 fw-bold mb-3">Fully Responsive</h3>
+              <p class="card-text text-muted">Looks stunning on all screen sizes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm card-hover">
+            <div class="card-body text-center p-4">
+              <div class="icon fs-1 mb-3">🎨</div>
+              <h3 class="card-title h5 fw-bold mb-3">Modern Design</h3>
+              <p class="card-text text-muted">Clean lines and vibrant colors that grab attention.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
